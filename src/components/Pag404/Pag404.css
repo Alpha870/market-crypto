@@ -1,0 +1,19 @@
+.div-404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-404 h1 {
+    color: white;
+}
+
+.div-404 img {
+    height: 500px;
+    border-radius: 10px;
+}
+
+.div-404 p {
+    color: white;
+    font-size: 25px;
+}

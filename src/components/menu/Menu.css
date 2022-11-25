@@ -1,0 +1,11 @@
+.container-menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.container-menu a {
+    color: white;
+    margin-right: 25px;
+    text-decoration: none;
+}
