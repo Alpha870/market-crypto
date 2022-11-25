@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
-import CardCripto from "./CardCripto/CardCripto";
+import CardCripto from "./components/CardCripto/CardCripto";
 
 function App() {
   const API_URL = import.meta.env.VITE_API_URL;
@@ -24,12 +24,12 @@ function App() {
 
   return (
     <>
-      <section className="container-list-criptos">
-        <h1 className="title-list-criptos">Lista de criptomonedas</h1>
+      <section>
+        <h1>Lista de criptomonedas</h1>
         <div className="cuadricula-list-criptos">
             {stateData.map(({ id, name, priceUsd, symbol, changePercent24Hr}) => (
               <CardCripto 
-              id={id} 
+              key={id} 
               name={name} 
               priceUsd={priceUsd}
               symbol= {symbol}

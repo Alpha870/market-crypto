@@ -1,0 +1,34 @@
+.article-cardcripto {
+  border: 1px solid skyblue;
+  border-left: 10px solid skyblue;
+  border-right: 10px solid skyblue;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+
+h3 {
+  color: rgb(191, 191, 191);
+  margin-left: 15px;
+}
+
+.div-cardcripto {
+  line-height: 5px;
+  margin-left: 15px;
+}
+
+p {
+  color: skyblue;
+}
+
+.label {
+  color: rgb(191, 191, 191);
+}
+
+.positivo {
+  color: greenyellow;
+}
+
+.negativo {
+  color: red;
+}
