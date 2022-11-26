@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./CardCripto.css";
 
 const CardCripto = ({ id, name, priceUsd, symbol, cambio24 }) => {
@@ -11,9 +12,10 @@ const CardCripto = ({ id, name, priceUsd, symbol, cambio24 }) => {
         <p>Precio:<span className="label"> {parsePrice} </span></p>
         <p>Código:<span className="label"> {symbol} </span></p>
         <p>Cambio 24hrs: <span className={parse24h > 0 ? "positivo" : "negativo"}> {parse24h}%</span></p>
+        <Link to={`/criptomonedas/${id}`}>Ver detalles</Link>
       </div>
     </article>
   );
 };
-
+ 
 export default CardCripto;

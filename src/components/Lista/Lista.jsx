@@ -29,7 +29,8 @@ function Lista() {
         <div className="cuadricula-list-criptos">
             {stateData.map(({ id, name, priceUsd, symbol, changePercent24Hr}) => (
               <CardCripto
-              key={id} 
+              key={id}
+              id={id}
               name={name} 
               priceUsd={priceUsd}
               symbol= {symbol}

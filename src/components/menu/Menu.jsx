@@ -9,7 +9,7 @@ const Menu = () => {
           <NavLink to="/">Inicio</NavLink>
         </li>
         <li>
-          <NavLink to="/pag-crypto">Crypto</NavLink>
+          <NavLink to="/criptomonedas">Lista de criptos</NavLink>
         </li>
       </ul>
     </nav>
