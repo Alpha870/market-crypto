@@ -1,3 +1,39 @@
-h1 {
+
+ 
+
+
+.page-cripto{
+   display: flex;
+   flex-direction: column;
+   border: 1px solid skyblue;
+
+}
+
+.info{
+   margin-left: 40px;
+}
+
+.tabla-history{
+   display: flex;
+   justify-content: center;
+   max-width: auto;
+}
+
+.tabla-history p {
+   display: grid;
+   border: 1px solid skyblue;
+   padding: 0px;
+   min-width: 200px;
+   text-align: center;
+}
+ 
+ p{
     color: white;
+ }
+ .label {
+    color: skyblue;
+}
+
+span {
+   color: azure;
 }

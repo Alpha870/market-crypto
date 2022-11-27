@@ -7,6 +7,10 @@ a:link, a:visited, a:active {
   color: white;
 }
 
+ul {
+  list-style:none
+}
+
 section {
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 }
