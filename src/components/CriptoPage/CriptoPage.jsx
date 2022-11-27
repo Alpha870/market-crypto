@@ -28,37 +28,20 @@ const CriptoPage = () => {
       .catch((e) => console.error(e));
   }, []);
 
-  if (!dataPage) return <h3>Cargando...</h3>;
+  if (!dataPage && !dataHistory) return <h3>Cargando...</h3>;
+  
+  
 
   return (
     <>
       <section className="page-cripto">
         <div className="info">
-          <p>
-            <span className="label">Nombre: </span>
-            {dataPage.name}
-          </p>
-          <p>
-            <span className="label">Código: </span>
-            {dataPage.symbol}
-          </p>
-          <p>
-            <span className="label">Precio: </span>
-            {parseFloat(dataPage.priceUsd).toFixed(3)}
-          </p>
-          <p>
-            <span className="label">Supply: </span>
-            {parseFloat(dataPage.supply).toFixed(0)}
-          </p>
-          <p>
-            <span className="label">Max.supply: </span>
-            {parseFloat(dataPage.maxSupply).toFixed(0)}
-          </p>
-
-          <p>
-            <a className="label">explorador: </a>
-            {dataPage.explorer}
-          </p>
+          <p><span className="label">Nombre: </span>{dataPage.name}</p>
+          <p><span className="label">Código: </span>{dataPage.symbol}</p>
+          <p><span className="label">Precio: </span>{parseFloat(dataPage.priceUsd).toFixed(3)}</p>
+          <p><span className="label">Supply: </span>{parseFloat(dataPage.supply).toFixed(0)}</p>
+          <p><span className="label">Max.supply: </span>{parseFloat(dataPage.maxSupply).toFixed(0)}</p>
+          <p><span className="label">Explorador: </span>{dataPage.explorer}</p>
         </div>
 
         <div className="history-cuadricula">
